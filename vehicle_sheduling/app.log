@@ -1,3 +1,6 @@
 error: getShed failed: Cannot read properties of undefined (reading '0') {"timestamp":"2026-06-09T08:01:19.240Z"}
 error: getShed failed: Cannot read properties of undefined (reading '0') {"timestamp":"2026-06-09T08:01:24.404Z"}
 error: getShed failed: Cannot read properties of undefined (reading '0') {"timestamp":"2026-06-09T08:02:10.046Z"}
+info: Depot 2 — 30 tasks scheduled, impact: 234 {"timestamp":"2026-06-09T08:08:19.872Z"}
+warn: Depot 1 not found {"timestamp":"2026-06-09T08:08:51.515Z"}
+info: Depot 1 — 18 tasks scheduled, impact: 124 {"timestamp":"2026-06-09T08:08:56.525Z"}
