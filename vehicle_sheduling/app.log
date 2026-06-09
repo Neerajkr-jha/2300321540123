@@ -4,3 +4,7 @@ error: getShed failed: Cannot read properties of undefined (reading '0') {"times
 info: Depot 2 — 30 tasks scheduled, impact: 234 {"timestamp":"2026-06-09T08:08:19.872Z"}
 warn: Depot 1 not found {"timestamp":"2026-06-09T08:08:51.515Z"}
 info: Depot 1 — 18 tasks scheduled, impact: 124 {"timestamp":"2026-06-09T08:08:56.525Z"}
+error: getShed failed: Request failed with status code 401 {"timestamp":"2026-06-09T08:30:57.870Z"}
+error: getShed failed: Request failed with status code 401 {"timestamp":"2026-06-09T08:31:01.302Z"}
+error: getShed failed: Request failed with status code 401 {"timestamp":"2026-06-09T08:31:04.795Z"}
+error: getShed failed: Request failed with status code 401 {"timestamp":"2026-06-09T08:31:32.065Z"}
