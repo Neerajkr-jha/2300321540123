@@ -1,10 +1,11 @@
+const logger = require('../../../logging_middleware/logger.js')
 const axios = require('axios')
 const {getOptmShed} =require("../services/vsServices.js")
 const TEST_url = process.env.TEST_API
 const TOKEN = process.env.TOKEN
 
-console.log(TOKEN);
-console.log(TEST_url)
+// console.log(TOKEN);
+// console.log(TEST_url)
 
 const getShed = async (req, res) => {
     try {
@@ -22,6 +23,7 @@ const getShed = async (req, res) => {
         const depot = depots.find((d) => d.ID === depotId)
 
         if (!depot) {
+            logger.warn(`Depot ${depotId} not found`) 
             return res.status(400).json({ error: "depot not found" })
         }
         const mecHours = depot.MechanicHours;
@@ -36,6 +38,7 @@ const getShed = async (req, res) => {
 
         const result = getOptmShed(mecHours,tasks)
 
+        logger.info(`Depot ${depotId} — ${result.choosen.length} tasks scheduled, impact: ${result.totalImp}`)
         return res.status(200).json({
             mechHrsAvl:mecHours,
             totalImp:result.totalImp,
@@ -45,7 +48,7 @@ const getShed = async (req, res) => {
             choosenTask: result.choosen,  
         })
     } catch (error) {
-        console.error('FULL ERROR:', error.message)
+        logger.error(`getShed failed: ${error.message}`)
         res.status(500).json({error:"Internal server error",details: error.message})
     }
 }
