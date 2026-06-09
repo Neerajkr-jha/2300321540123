@@ -1,8 +1,8 @@
 const express=require("express")
 const router=express.Router();
 
-const {getShed}=require("../controllers/vechicleShedController")
+const {getShed}=require("../controllers/vechicleShedController.js")
 
-router.get("/shedule/:depotId",getShed);
+router.get("/schedule/:depotId",getShed);
 
 module.exports=router

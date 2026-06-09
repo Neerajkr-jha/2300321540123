@@ -1,6 +1,6 @@
-require ('dotenv').config
+require ('dotenv').config()
 const express=require("express")
-const vsShedRoutes=require('./routes/vsRouter')
+const vsShedRoutes=require('./MainApp/routes/vsRouter')
 
 const app=express();
 const port=process.env.PORT || 3000
