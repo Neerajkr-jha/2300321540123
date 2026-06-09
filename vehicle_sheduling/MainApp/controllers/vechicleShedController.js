@@ -11,6 +11,6 @@ const getShed=async(req,res)=>{
     }})
 
     const depots=allDepots.data.depots;
-
+    
     
 }
