@@ -8,3 +8,5 @@ error: getShed failed: Request failed with status code 401 {"timestamp":"2026-06
 error: getShed failed: Request failed with status code 401 {"timestamp":"2026-06-09T08:31:01.302Z"}
 error: getShed failed: Request failed with status code 401 {"timestamp":"2026-06-09T08:31:04.795Z"}
 error: getShed failed: Request failed with status code 401 {"timestamp":"2026-06-09T08:31:32.065Z"}
+info: Depot 2 — 31 tasks scheduled, impact: 194 {"timestamp":"2026-06-09T08:32:38.492Z"}
+info: Depot 3 — 39 tasks scheduled, impact: 214 {"timestamp":"2026-06-09T08:33:44.669Z"}
